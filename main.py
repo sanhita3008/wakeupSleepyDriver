@@ -21,12 +21,12 @@ def sendSMS():
     from twilio.rest import Client
 
     # the following line needs your Twilio Account SID and Auth Token
-    client = Client("AC1183dcc8503cb74bae2350f14def6ee1", "3bf0eccc8f423690e130b61cf57e2b62")
+    client = Client("key", "value")
 
     # "from_" number: Twilio account number
     # "to" number: phone number with which we signed up for Twilio(authorised number)
-    client.messages.create(to="+16132653830",
-                           from_="+18646136148",
+    client.messages.create(to="your number",
+                           from_="twilio number",
                            body="Hello XYZ! this is to inform you that your friend is sleepy while he is driving!")
 
 # function for sendSMS ends
