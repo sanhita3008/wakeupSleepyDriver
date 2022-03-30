@@ -78,7 +78,7 @@ while True:
             #checking if the flag greater than the initialized flag- this is for time
             if flag >= flag_threshold_frame:
                 #send SMS to friend
-                sendSMS()
+                #sendSMS()
                 #play the alert sound
                 alertSound.play()
                 #add the text in the frame
